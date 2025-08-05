@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-negro: black;
+  --color-blanco: white;
+  --color-secundario: #C461B8;
+  --color-primario: #801B74;
+}
+body{
+  background-color: var(--color-negro);
+  font-family: "Montserrat", sans-serif;
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+nav ul li:hover{
+  background-color:#801B74;
+  border: solid 2px #C461B8;
+}
+
+nav{
+  display: flex;
+  
+}
+nav ul a{
+  text-decoration: none;
+  color: var(--color-blanco);
+  font-size: 1.25rem;
+}
+nav ul li{
+  list-style-type:none;
+  border-radius: 5px;
+  width: 160px;
+  text-align: center;
+  height: 30px;
+}
+
+.menu{
+  width: 100%;
+  height: 5.625rem;
+  display: flex;
+  color: var(--color-blanco);
+  padding: 0 40px;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--color-blanco);
+}
+.titulo{
+  display: flex;
+  flex-direction: column;
+}
+.titulo-1{
+  margin-top: 5px;
+  font-size: 2.5rem;
+  text-shadow: 2px 5px 4px #801B74;
+}
+.subtitulo{
+  font-size: 1.25rem;
+  color: var(--color-secundario);
+}
+main{
+  color: var(--color-blanco);
+}
+.mi_foto{
+  border-radius: 30px;
+  height: 70%;
+  border: solid 5px #801B74;
+}
+.sobre_mi{
+  display: flex;
+  height: 37.5rem;
+  justify-content: space-between;
+  width: auto;
+  padding: 0 20%;
+  align-items: center;
+  text-align: center;
+}
+.presentacion{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.presentacion h2{
+    color: var(--color-secundario);
+    font-size: 1.5rem;
+}
+
+.texto{
+  font-size: 1.4rem;
+}
+.presentacion h1{
+  font-size: 2.3rem;
+  text-shadow:2px 4px 5px #C461B8;
+}
+.iconos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.iconos img{
+  width: 50px;
+}
+.iconos img:hover{
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.titulos{
+  background: linear-gradient(to bottom, #801B74, black);
+  height: 11.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  width: 100%;
+}
+.iconos_tecnologias{
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.iconos_lenguajes{
+  display: flex;
+  gap: 20px;
+}
+.lenguajes{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.recuadro_lenguaje{
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  gap: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recuadro_lenguaje:hover{
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.certificados{
+  width: 70%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+.recuadro{
+  width: 300px;
+  border: solid ;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+  text-align: center;
+  background: radial-gradient(circle, #828282 , black);
+  font-size: 0.75rem;
+}
+.recuadro img{
+  width: 250px;
+}
+
+.certificaciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton_certificado{
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border-radius: 10px;
+  height: 2.5rem;
+  border: solid var(--color-secundario);
+  width: 100%;
+  font-size: 1.125rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.boton_certificado:hover{
+  background-color: var(--color-secundario);
+}
+.proyecto{
+  width: 50%;
+  height: 20rem;
+  margin: 20px 0;
+  border: solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.proyectos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proyecto div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+.proyecto img{
+  width: 60%;
+}
+.descripcion_proyecto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.boton_proyectos{
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border-radius: 5px;
+  border: solid 1px var(--color-secundario);
+  width: 90%;
+  height: 1.56rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.boton_proyectos:hover{
+  background-color: var(--color-secundario);
+}
+.contacto{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background:linear-gradient(to bottom, #801B74, black);
+  padding: 30px;
+  width: 80%;
+  height: 40rem;
+}
+.texto_contact{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.boton_enviar{
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(to bottom, #C461B8, #801B74);
+  color: var(--color-blanco);
+  border-radius: 15px;
+  font-size: 15px;
+}
+.recuadro_form{
+  width: 50%;
+}
+form{display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label{
+  height: 2.5rem;
+}
+input{
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+textarea{
+  width: 100%;
+  height: 8rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pie_pagina{
+  background: linear-gradient(to bottom, #801B74, #1e1e1e) ;
+  width: 100%;
+  height: 5rem;
+  color: var(--color-blanco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid var(--color-blanco);
+
+}
+.iconos_footer img{
+  width: 20px;
+}
