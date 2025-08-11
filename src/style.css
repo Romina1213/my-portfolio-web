@@ -411,13 +411,13 @@ textarea{
   }
   /* Proyectos */
   .proyecto{
-    width: 100%;
+    width: 95%;
     flex-direction: column;
     height: auto;
     gap: 10px;
   }
   .proyecto div{
-    width: 100%;
+    width: 95%;
   }
   .proyecto img{
     width: 100%;
